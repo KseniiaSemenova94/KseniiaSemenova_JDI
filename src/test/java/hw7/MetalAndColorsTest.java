@@ -12,5 +12,6 @@ public class MetalAndColorsTest extends BaseTest {
         JdiSite.homePage.openMetalAndColorsPageByHeaderMenu();
         JdiSite.metalAndColorsPage.checkMetalAndColorsPageOpened();
         JdiSite.metalAndColorsPage.fillAndSubmitMetalAndColorsForm(DefaultsData.DEFAULT_DATA);
+        JdiSite.metalAndColorsPage.checkResults(DefaultsData.DEFAULT_DATA);
     }
 }
