@@ -3,7 +3,6 @@ package hw7.entities;
 import com.epam.jdi.tools.DataClass;
 import lombok.Getter;
 import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,11 +19,6 @@ public class MetalAndColors extends DataClass<MetalAndColors> {
     private String metal;
     private List<String> vegetables;
 
-   private int sum() {
-       return (oddSummaryNumber + evenSummaryNumber);
-   }
-
-
     public List<String> getExpectedResults(){
         List<String>  resultList = new ArrayList<>();
         resultList.add("Summary: " + sum());
@@ -33,5 +27,9 @@ public class MetalAndColors extends DataClass<MetalAndColors> {
         resultList.add("Metal: " + metal);
         resultList.add("Vegetables: " + String.join(LINE_SEPARATOR, vegetables));
         return resultList;
+    }
+
+    private int sum() {
+        return (oddSummaryNumber + evenSummaryNumber);
     }
 }

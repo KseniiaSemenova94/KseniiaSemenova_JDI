@@ -6,6 +6,7 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum User {
+
     PITER("epam", "1234", "PITER CHAILOVSKII");
 
     private final String login;

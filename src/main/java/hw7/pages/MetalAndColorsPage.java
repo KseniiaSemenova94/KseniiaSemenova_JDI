@@ -6,10 +6,8 @@ import com.epam.jdi.light.elements.pageobjects.annotations.Title;
 import com.epam.jdi.light.elements.pageobjects.annotations.Url;
 import hw7.entities.MetalAndColors;
 import hw7.forms.MetalAndColorsForm;
-
 import java.util.List;
 import java.util.stream.Collectors;
-
 import static org.testng.Assert.assertEquals;
 
 @Url("metals-colors.html") @Title("Metal and Colors")
@@ -28,7 +26,6 @@ public class MetalAndColorsPage extends BasePage {
         metalAndColorsForm.fillForm(defaultData);
         metalAndColorsForm.submitForm();
     }
-
 
     public void checkResults(MetalAndColors defaultData) {
         assertEquals(getResults(), defaultData.getExpectedResults());

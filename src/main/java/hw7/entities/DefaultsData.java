@@ -1,8 +1,6 @@
 package hw7.entities;
 
-
 import hw7.enums.*;
-
 import java.util.Arrays;
 
 public class DefaultsData {
