@@ -20,13 +20,14 @@ public class MetalAndColors extends DataClass<MetalAndColors> {
     private List<String> vegetables;
 
     public List<String> getExpectedResults(){
-        List<String>  resultList = new ArrayList<>();
-        resultList.add("Summary: " + sum());
-        resultList.add("Elements: " + String.join(LINE_SEPARATOR, elements));
-        resultList.add("Color: " + color);
-        resultList.add("Metal: " + metal);
-        resultList.add("Vegetables: " + String.join(LINE_SEPARATOR, vegetables));
-        return resultList;
+        // TODO FYI
+        return new ArrayList<String>() {{
+            add("Summary: " + sum());
+            add("Elements: " + String.join(LINE_SEPARATOR, elements));
+            add("Color: " + color);
+            add("Metal: " + metal);
+            add("Vegetables: " + String.join(LINE_SEPARATOR, vegetables));
+        }};
     }
 
     private int sum() {

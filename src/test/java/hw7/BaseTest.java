@@ -20,6 +20,8 @@ public class BaseTest {
         initElements(JdiSite.class);
     }
 
+    // TODO 1. This is not the bes idea to create just a methods in a *test class.
+    // Use @Before* annotation, for the example.
     public void loginAsUser(User user) {
         JdiSite.open();
         JdiSite.homePage.login(user);
