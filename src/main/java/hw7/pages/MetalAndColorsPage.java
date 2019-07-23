@@ -32,6 +32,10 @@ public class MetalAndColorsPage extends BasePage {
     }
 
     public List<String> getResults() {
-        return results.getAll().stream().map(el -> el.getText()).collect(Collectors.toList());
+        // TODO Take a look on IDEA warning.
+        return results.getAll()
+                .stream()
+                .map(el -> el.getText())
+                .collect(Collectors.toList());
     }
 }
