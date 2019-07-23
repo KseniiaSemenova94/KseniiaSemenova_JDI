@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MetalAndColorsTest hw8 suite">
+
+    <test name="HW8 test">
+        <classes>
+            <class name="hw8.MetalAndColorsTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -33,8 +33,8 @@ public class BasePage extends WebPage {
         userName.shouldBe().text(Matchers.equalTo(user.getFullName()));
     }
 
-    public void openMetalAndColorsPageByHeaderMenu() {
-        clickOnHeaderMenuItem(HeaderMenuItem.METALS_AND_COLORS);
+    public void openNewPageByHeaderMenu(HeaderMenuItem item) {
+        clickOnHeaderMenuItem(item);
     }
 
     private void clickOnHeaderMenuItem(HeaderMenuItem item){

@@ -18,9 +18,6 @@ public class MetalAndColorsPage extends BasePage {
     @FindBy(xpath = "//ul[@class='panel-body-list results']//li")
     private UIElement results;
 
-    public void checkMetalAndColorsPageOpened(){
-        checkOpened();
-    }
 
     public void fillAndSubmitMetalAndColorsForm(MetalAndColors defaultData) {
         metalAndColorsForm.fillForm(defaultData);
@@ -32,7 +29,7 @@ public class MetalAndColorsPage extends BasePage {
     }
 
     public List<String> getResults() {
-        // TODO Take a look on IDEA warning.
+        // TODO Take a look on IDEA warning. - I understand now, it's more readable
         return results.getAll()
                 .stream()
                 .map(el -> el.getText())

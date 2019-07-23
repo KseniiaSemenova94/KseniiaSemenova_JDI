@@ -26,7 +26,7 @@ public class MetalAndColors extends DataClass<MetalAndColors> {
     }
 
     public List<String> getExpectedResults(){
-        // TODO FYI
+        // TODO FYI - Okey, it's more professional
         return new ArrayList<String>() {{
             add("Summary: " + sum());
             add("Elements: " + String.join(LINE_SEPARATOR, elements));
