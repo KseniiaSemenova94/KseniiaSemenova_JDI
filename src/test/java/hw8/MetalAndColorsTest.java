@@ -1,6 +1,6 @@
 package hw8;
 
-import base.BaseTest;
+import hw7.BaseTest;
 import hw7.JdiSite;
 import hw7.entities.MetalAndColors;
 import hw7.enums.User;

@@ -3,7 +3,6 @@ package hw7;
 import hw7.entities.DefaultsData;
 import hw7.enums.User;
 import org.testng.annotations.Test;
-import base.BaseTest;
 
 public class MetalAndColorsTest extends BaseTest {
 
