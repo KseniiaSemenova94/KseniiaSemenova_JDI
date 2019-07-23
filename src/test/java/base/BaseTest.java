@@ -1,6 +1,7 @@
-package hw7;
+package base;
 
 import com.epam.jdi.light.driver.get.DriverData;
+import hw7.JdiSite;
 import hw7.enums.User;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
